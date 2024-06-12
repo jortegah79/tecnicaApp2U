@@ -1,0 +1,7 @@
+{
+  "name": "tecnica",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
