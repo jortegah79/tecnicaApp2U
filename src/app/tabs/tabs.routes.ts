@@ -12,8 +12,11 @@ export const routes: Routes = [
           import('../pages/list/list.page').then((p) => p.ListPage),
       },
       {
-        path:"**",
-        pathMatch:'full',
+        path:'',
+         pathMatch:'full',
+        redirectTo:'list'
+      },{
+        path:'**',
         redirectTo:'list'
       }
     ],

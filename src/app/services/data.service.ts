@@ -14,9 +14,9 @@ export class DataService {
   private http = inject(HttpClient);
   private storage = inject(StorageService);
 
-  private user: string = 'test@gmail.com';
-  private password: string = '1234';
-  private uri: string = 'https://inphototest.app2u.es/api/photographer/';
+  private user: string = environment.user;
+  private password: string = environment.password;
+  private uri: string = environment.URL_DATA;
   resultados: Result[] = [];
 
    getData(uri: string = this.uri,withNext:boolean=false):Observable<PhotographerResponse>{

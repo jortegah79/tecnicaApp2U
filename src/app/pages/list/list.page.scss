@@ -2,13 +2,14 @@
   background: #d99079;
   padding: 16px;
 }
-.title {
+h4.title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
   font-family: ubuntu;
+  font-size: 1.5rem;
   font-weight: bolder;
   color: #29190b;
 }
@@ -20,9 +21,20 @@
 .avatar {
   width: 30px !important;
   height: 30px;
-  margin-left: 20px;
+
+
   border-radius: 50%;
 }
 .bg-light {
   background-color: #fafafa !important;
+}
+img.icon-heart{
+  width:35px!important;
+  height: 35px!important;
+}
+div.top-img-header{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin:5px;
 }

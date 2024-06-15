@@ -13,7 +13,16 @@ export const routes: Routes = [
     {
       path:'event/:id',
       loadComponent:()=>import('./pages/event/event.page').then(p=>p.EventPage)
+    },
+    {
+      path:'',
+      pathMatch:'full',
+      redirectTo:'tabs'
+    },{
+      path:'**',
+      redirectTo:'tabs'
     }
+
   ]
 }];
 
