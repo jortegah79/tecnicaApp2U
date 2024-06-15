@@ -84,24 +84,24 @@ export class ListPage {
 
   scanIcon: Icon = {
     name: 'Scan',
-    icon: '/assets/ic_camera.svg',
+    icon: 'assets/ic_camera.svg',
     path: '',
   };
   menuButtons: MenuButton[] = [
     {
       color: '#d99079',
       name: 'Program',
-      icon: '/assets/ic_calendar.svg',
+      icon: 'assets/ic_calendar.svg',
     },
     {
       color: '#989e9c',
       name: 'Artworks',
-      icon: '/assets/ic_frame.svg',
+      icon: 'assets/ic_frame.svg',
     },
     {
       color: '#c2b782',
       name: 'Map',
-      icon: '/assets/ic_pin.svg',
+      icon: 'assets/ic_pin.svg',
     },
   ];
 

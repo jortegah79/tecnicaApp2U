@@ -37,7 +37,7 @@ export class StorageService {
   }
 
   async insertData() {
-    let data = fetch('/assets/datos.json')
+    let data = fetch('assets/datos.json')
       .then((res) => res.json())
       .then((data) => {
         this.saveData(environment.RESULTS, data);
