@@ -1,0 +1,15 @@
+.card-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px ;
+  font-weight: 200;
+  font-size: x-large;
+  font-family: "Arapey";
+  img {
+    height: 35px;
+    width: 35px;
+
+  }
+}

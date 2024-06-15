@@ -1,0 +1,15 @@
+<ion-content>
+  <ion-grid fixed>
+    <ion-row class="ion-margin-vertical">
+      <ion-col size="1" color="medium">
+        <img
+          src="assets/ic_back_arrow.svg"
+          style="height: 20px"
+          (click)="backToList()"
+        />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <app-event-full-card [event]="event"></app-event-full-card>
+</ion-content>

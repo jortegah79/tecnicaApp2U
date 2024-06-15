@@ -1,0 +1,28 @@
+.header {
+  background: #d99079;
+  padding: 16px;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  font-family: ubuntu;
+  font-weight: bolder;
+  color: #29190b;
+}
+
+.subtitle {
+  font-weight: 400;
+  padding: 0 5px;
+}
+.avatar {
+  width: 30px !important;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.bg-light {
+  background-color: #fafafa !important;
+}
