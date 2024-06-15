@@ -23,22 +23,22 @@ export class TabsPage {
     {
       name: 'Scan',
       path: 'list',
-      icon: "/assets/ic_camera.svg",
+      icon: "assets/ic_camera.svg",
     },
     {
       name: 'Festivals',
       path: '',
-      icon: "/assets/ic_eye.svg",
+      icon: "assets/ic_eye.svg",
     },
     {
       name: 'News',
       path: '',
-      icon: "/assets/ic_megaphone.svg",
+      icon: "assets/ic_megaphone.svg",
     },
     {
       name: 'Favs',
       path: '',
-      icon: "/assets/ic_heart.svg",
+      icon: "assets/ic_heart.svg",
     },
   ];
 constructor(){}
