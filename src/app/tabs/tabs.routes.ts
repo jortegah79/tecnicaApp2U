@@ -17,7 +17,7 @@ export const routes: Routes = [
         redirectTo:'list'
       },{
         path:'**',
-        redirectTo:'list'
+        redirectTo:'/tabs/list'
       }
     ],
   },
