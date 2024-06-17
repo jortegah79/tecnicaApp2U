@@ -13,7 +13,7 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="12">
+      <ion-col size="12" class="ion-padding-bottom ion-margin-bottom">
         <h4 class="ion-justify-content-between title">
           INCADAQUÉS 2020
           <img class="icon-heart" src="assets/ic_heart_fill.svg" />
@@ -48,6 +48,9 @@
         />
       </ion-col>
     </ion-row>
+    }
+    @if(results.length===0){
+      <h3 class="ion-text-center">Nothing to show...</h3>
     }
   </ion-grid>
 </ion-content>

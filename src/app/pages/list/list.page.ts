@@ -30,11 +30,7 @@ import { Icon } from 'src/app/models/icon.model';
 import { MenuButtonComponent } from '../../components/menu-button/menu-button.component';
 import { MenuButton } from 'src/app/models/menu-button.model';
 import { DataService } from 'src/app/services/data.service';
-import {
-  PhotographerResponse,
-  Result,
-} from 'src/app/models/PhotographerResponse.model';
-import { switchMap } from 'rxjs';
+import { Result } from 'src/app/models/PhotographerResponse.model';
 import { StorageService } from 'src/app/services/storage.service';
 import { environment } from 'src/environments/environment';
 import { EventCardComponent } from "../../components/event-card/event-card.component";
@@ -107,15 +103,16 @@ export class ListPage {
 
   results: Result[] = [];
   constructor() {
-    //this.dataService.getData().subscribe();
+   //metode per demanar al servei que capturi les dades y les desi al storage.
+   this.dataService.getData().subscribe();
 
-    /**test */
-    this.storage.insertData();
   }
+  //abans de que es vegi l'imatge, obtenim els resultats.
   ionViewWillEnter() {
     this.getResults();
   }
 
+  //metode per totes les dades del storage
   async getResults() {
     this.results = await this.storage.loadData(environment.RESULTS);
   }

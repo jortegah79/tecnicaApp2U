@@ -1,5 +1,5 @@
 import { IonIcon } from '@ionic/angular/standalone';
-import { Component, Input, OnInit, inject } from '@angular/core';
+import { Component, Input,  inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { TitleCardComponent } from "../title-card/title-card.component";
 
@@ -11,18 +11,13 @@ import { TitleCardComponent } from "../title-card/title-card.component";
     imports: [IonIcon, TitleCardComponent]
 })
 export class EventCardComponent {
-  @Input() image: string;
-  @Input() name: string;
-  @Input() id: string;
+  @Input() image!: string;
+  @Input() name!: string;
+  @Input() id!: string;
 
   private router = inject(Router);
 
-  constructor() {
-    this.image = '';
-    this.name = '';
-    this.id = '';
-  }
-
+  //Envia l'usuari a una página per veure l'informació
   showEvent(id: string) {
     this.router.navigateByUrl(`event/${id}`);
   }

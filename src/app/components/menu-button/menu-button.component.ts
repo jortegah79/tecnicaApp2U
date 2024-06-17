@@ -9,9 +9,9 @@ import { Component, Input } from '@angular/core';
   imports:[CommonModule]
 })
 export class MenuButtonComponent {
-  @Input() name: string = '';
-  @Input() icon: string = '';
-  @Input() color: string = '';
+  @Input() name!: string ;
+  @Input() icon!: string ;
+  @Input() color!: string;
 
   constructor() {}
 }

@@ -16,10 +16,8 @@ import {
   IonRow,
 } from '@ionic/angular/standalone';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DataService } from 'src/app/services/data.service';
 import { Result } from 'src/app/models/PhotographerResponse.model';
-import { EventCardComponent } from '../../components/event-card/event-card.component';
-import { EventFullCardComponent } from 'src/app/event-full-card/event-full-card.component';
+import { EventFullCardComponent } from 'src/app/components/event-full-card/event-full-card.component';
 
 @Component({
   selector: 'app-event',
@@ -44,12 +42,15 @@ import { EventFullCardComponent } from 'src/app/event-full-card/event-full-card.
   ],
 })
 export class EventPage {
+
   private activatedRoute = inject(ActivatedRoute);
   private router = inject(Router);
   private storage = inject(StorageService);
+
   event?: Result;
 
   constructor() {
+    //obtenim el id passat pels params y obtenim del storage el element amb el id. Si capturem l'error tornem a la llista.
     this.activatedRoute.params.subscribe(async (params) => {
       try {
         const event = await this.storage.getDataEvent(params['id']);
@@ -59,6 +60,7 @@ export class EventPage {
       }
     });
   }
+  //tornar a la pagina List
   backToList() {
     this.router.navigateByUrl('tabs/list');
   }

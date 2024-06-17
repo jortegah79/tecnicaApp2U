@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { TitleCardComponent } from '../components/title-card/title-card.component';
-import { Result } from '../models/PhotographerResponse.model';
+import { Component, Input } from '@angular/core';
+import { TitleCardComponent } from '../title-card/title-card.component';
+import { Result } from 'src/app/models/PhotographerResponse.model';
 
 @Component({
   selector: 'app-event-full-card',

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-icon',
@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   standalone:true,
 })
 export class IconComponent {
-  @Input() name: string = '';
-  @Input() icon: string = '';
+  @Input() name!: string ;
+  @Input() icon!: string ;
 
 }

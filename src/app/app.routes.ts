@@ -1,4 +1,3 @@
-import { TabsPage } from './tabs/tabs.page';
 import { Routes } from '@angular/router';
 
 
